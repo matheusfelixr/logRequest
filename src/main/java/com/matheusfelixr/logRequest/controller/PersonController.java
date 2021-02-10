@@ -18,8 +18,8 @@ public class PersonController {
     PersonService personService;
 
     @PostMapping("/save")
-    public Mono<Person> save(@RequestParam String name){
-        return personService.save(new Person(name));
+    public Mono<Person> save(@RequestBody Person person){
+        return personService.save(person);
     }
 
     @GetMapping("/find-all")
