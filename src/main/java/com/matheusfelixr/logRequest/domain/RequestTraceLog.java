@@ -11,11 +11,11 @@ import java.util.Date;
 @Document
 public class RequestTraceLog implements Serializable {
 
-	private static final long serialVersionUID = 4166091231231451385L;
+
+	private static final long serialVersionUID = 116601231231385L;
 
 	@Id
-	private Long id;
-
+	private String id;
 
 	private String application;
 	
